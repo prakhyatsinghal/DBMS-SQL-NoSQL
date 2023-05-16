@@ -10,3 +10,40 @@ SELECT column1, column2, ...
 FROM table_name
 ORDER BY column1, column2, ... ASC|DESC;
 ```
+
+ORDER BY Example
+The following SQL statement selects all customers from the "Customers" table, sorted by the "Country" column:
+
+Example
+```
+SELECT * FROM Customers
+ORDER BY Country;
+```
+
+ORDER BY DESC Example
+The following SQL statement selects all customers from the "Customers" table, sorted DESCENDING by the "Country" column:
+
+Example
+-
+```
+SELECT * FROM Customers
+ORDER BY Country DESC;
+```
+
+ORDER BY Several Columns Example
+The following SQL statement selects all customers from the "Customers" table, sorted by the "Country" and the "CustomerName" column. This means that it orders by Country, but if some rows have the same Country, it orders them by CustomerName:
+
+Example
+```
+SELECT * FROM Customers
+ORDER BY Country, CustomerName;
+ORDER BY Several Columns 
+```
+
+Example 2
+The following SQL statement selects all customers from the "Customers" table, sorted ascending by the "Country" and descending by the "CustomerName" column:
+```
+Example
+SELECT * FROM Customers
+ORDER BY Country ASC, CustomerName DESC;
+```
